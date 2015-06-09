@@ -5,7 +5,7 @@ include $(CLEAR_VARS)
 # get included in user or SDK builds. (GPL issues)
 #
 LOCAL_SRC_FILES := gdbserver
-LOCAL_MODULE := gdbserver
+LOCAL_MODULE := gdbserver_c
 LOCAL_MODULE_CLASS := EXECUTABLES
 LOCAL_MODULE_TAGS := debug
 include $(BUILD_PREBUILT)
@@ -14,3 +14,4 @@ include $(BUILD_PREBUILT)
 prebuilt_files :=
 
 $(call add-prebuilt-files, EXECUTABLES, $(prebuilt_files))
+
